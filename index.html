@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="NARANJO.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="agx" poster="poster.webp" shadow-intensity="1.92" exposure="1.25" shadow-softness="0.56" camera-orbit="-40.51deg 73.47deg 8.29m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-2" data-position="-0.03301169450318753m 1.266399622663245m 0.013865659597652708m" data-normal="-0.963656095062825m 0.06936679791485338m 0.2579829021375402m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">El árbol de naranjo es resistente a plagas y enfermedades</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.9764184025233291m 2.930729299700727m 0.8828811862865973m" data-normal="-0.6537739144946192m 0.3177528285785588m 0.6867407142850258m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Los naranjos tardan entre 3 y 4 años en dar sus primeros frutos.</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="-1.4550134673088486m 2.1673935050287296m -0.5307785046094964m" data-normal="-0.6657636668657572m 0.6263326106318748m 0.4055443264804991m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">El árbol de naranja es un cítrico que produce la flor de Azahar, con la que se elabora una miel muy apreciada.
+          </div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="0.044884003378623305m 0.5363327401345059m -0.0006949298171603502m" data-normal="0.8474054384466692m 0.18843862441781595m -0.49638181646644763m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Las hojas, las raíces, la corteza y los frutos del naranjo se utilizan en la medicina tradicional</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
